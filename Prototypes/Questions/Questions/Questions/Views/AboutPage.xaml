@@ -3,8 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Questions.Views.AboutPage"
              xmlns:vm="clr-namespace:Questions.ViewModels"
-             Title="{Binding Title}">
-    
+             xmlns:local="clr-namespace:Questions.ViewModels"
+             xmlns:model="clr-namespace:Questions.Models"  
+             Title="ÖH Wahl">
+             <!-- Title="{Binding Title}"> -->
+
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
@@ -23,13 +26,37 @@
         <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
-                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
+                    <!--
+                        <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
+                    -->
                 </ContentView>
             </StackLayout>
         </StackLayout>
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Start developing now" FontSize="Title"/>
+                <Label Text="Wann finden die ÖH-Wahlen immer statt?" FontSize="Title"/>
+                
+                <!-- Item List -->
+
+                <StackLayout Margin="20,35,20,20"
+                             HorizontalOptions="Center">
+                    <ListView ItemsSource="{Binding Items}"/>
+                    <!--
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Baboon</x:String>
+                                <x:String>Capuchin Monkey</x:String>
+                                <x:String>Blue Monkey</x:String>
+                                <x:String>Squirrel Monkey</x:String>
+                                <x:String>Golden Lion Tamarin</x:String>
+                                <x:String>Howler Monkey</x:String>
+                                <x:String>Japanese Macaque</x:String>
+                            </x:Array>
+                        </ListView.ItemsSource>
+                        -->
+
+                </StackLayout>
+
                 <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="0,0,0,0"/>
                 <Label FontSize="16" Padding="0,24,0,0">
                     <Label.FormattedText>
