@@ -40,7 +40,16 @@
 
                 <StackLayout Margin="20,35,20,20"
                              HorizontalOptions="Center">
-                    <ListView ItemsSource="{Binding Items}"/>
+
+                    <Button Text="Zu jedem Vollmond" 
+                            Clicked="Button_Clicked_1"/>
+                    <Button Text="Alle 2 Jahre"
+                            Clicked="Button_Clicked_2"/>
+
+                    <!--<ListView ItemsSource="{Binding Answers}"/>-->
+
+
+                    <!--<ListView ItemsSource="{Binding Items}"/>-->
                     <!--
                         <ListView.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
