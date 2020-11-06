@@ -22,7 +22,7 @@
             <Slider Grid.Column="1" />
         </Grid>
         <!--Question-->
-        <StackLayout Orientation="Horizontal" HeightRequest="185">
+        <StackLayout Orientation="Horizontal" HeightRequest="160">
             <Label Text="Frage" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#FCFCFC" FontSize="24" FontAttributes="Bold" FontFamily="Comfortaa"/>
         </StackLayout>
         <!--Answerbutton 1-->
