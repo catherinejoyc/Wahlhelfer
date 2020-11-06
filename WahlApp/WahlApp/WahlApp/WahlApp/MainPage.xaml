@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WahlApp.MainPage">
+
+    <StackLayout BackgroundColor="#2D3238" Padding="25,35,25,35">
+        <!--Header-->
+        <Label Text="ÖH WAHL" HorizontalTextAlignment="Center" TextColor="#FCFCFC" FontSize="16" FontAttributes="Bold" FontFamily="Century Gothic"/>
+        <!--Cancel Button & Slider-->     
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+
+            <ImageButton WidthRequest="30" BackgroundColor="White" CornerRadius="0" HorizontalOptions="Start" />
+
+            <Slider Grid.Column="1" />
+        </Grid>
+        <!--Question-->
+        <StackLayout Orientation="Horizontal" HeightRequest="185">
+            <Label Text="Frage" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#FCFCFC" FontSize="24" FontAttributes="Bold" FontFamily="Comfortaa"/>
+        </StackLayout>
+        <!--Answerbutton 1-->
+        <Button Text="Antwort 1"
+                
+                FontFamily="Century Gothic"
+                HeightRequest="50"
+                HorizontalOptions="Fill"
+                TextColor="#FCFCFC"
+                CornerRadius="20"
+                BackgroundColor="#2D3238"
+                BorderColor="#565758"
+                BorderWidth="1.5"/>
+        <!--Answerbutton 2-->
+        <Button Text="Antwort 2"
+                
+                FontFamily="Century Gothic"
+                HeightRequest="50"
+                HorizontalOptions="Fill"
+                TextColor="#FCFCFC"
+                CornerRadius="20"
+                BackgroundColor="#2D3238"
+                BorderColor="#565758"
+                BorderWidth="1.5"/>
+
+        <!--<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->
+    </StackLayout>
+
+</ContentPage>
